@@ -106,6 +106,7 @@ export const AIAssistantModal: React.FC<AIAssistantModalProps> = ({ isOpen, onCl
           </div>
 
           <button
+            type="button"
             onClick={onClose}
             className="p-2 text-slate-400 hover:text-white rounded-full hover:bg-white/10 transition-colors"
           >
@@ -164,6 +165,7 @@ export const AIAssistantModal: React.FC<AIAssistantModalProps> = ({ isOpen, onCl
           <span className="text-slate-400 font-bold shrink-0">Try asking:</span>
           {samplePrompts.map((p, i) => (
             <button
+              type="button"
               key={i}
               onClick={() => handleSend(p)}
               className="px-2.5 py-1 rounded-full bg-slate-100 hover:bg-blue-50 hover:text-blue-700 hover:border-blue-200 border border-slate-200/60 shrink-0 transition-colors"

@@ -45,6 +45,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResume, onOpenAI
               <ArrowRight className="w-3.5 h-3.5" />
             </a>
             <button
+              type="button"
               onClick={onOpenResume}
               className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 border border-slate-300 text-slate-800 font-semibold text-xs sm:text-sm px-5 py-3.5 rounded-full shadow-sm hover:border-slate-400 transition-all"
             >
@@ -52,6 +53,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenResume, onOpenAI
               <Download className="w-3.5 h-3.5 text-slate-600" />
             </button>
             <button
+              type="button"
               onClick={onOpenAIChat}
               className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold text-xs sm:text-sm px-5 py-3.5 rounded-full shadow-md shadow-blue-500/20 transition-all active:scale-95"
             >

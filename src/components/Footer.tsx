@@ -33,6 +33,7 @@ export const Footer: React.FC = () => {
         <div className="flex items-center gap-4 text-xs text-slate-400">
           <span>© 2026 Mukil Karupusamy. All rights reserved.</span>
           <button
+            type="button"
             onClick={scrollToTop}
             aria-label="Back to Top"
             className="p-1.5 rounded-full bg-slate-100 hover:bg-blue-50 hover:text-blue-600 transition-colors text-slate-600"

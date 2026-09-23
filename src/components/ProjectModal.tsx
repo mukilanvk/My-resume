@@ -177,6 +177,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
       <div className="bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl border border-slate-200 relative p-6 sm:p-8 space-y-6">
         {/* Close Button */}
         <button
+          type="button"
           onClick={onClose}
           className="absolute top-5 right-5 p-2 text-slate-400 hover:text-slate-800 rounded-full hover:bg-slate-100 transition-colors z-10"
         >
@@ -345,6 +346,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               {/* Point Increment Buttons */}
               <div className="grid grid-cols-2 gap-3">
                 <button
+                  type="button"
                   onClick={() => scorePoint('A')}
                   disabled={match.isFinished}
                   className="bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs py-3 rounded-xl shadow-md transition-all active:scale-95 disabled:opacity-50"
@@ -352,6 +354,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
                   +1 Point ({match.playerA})
                 </button>
                 <button
+                  type="button"
                   onClick={() => scorePoint('B')}
                   disabled={match.isFinished}
                   className="bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs py-3 rounded-xl shadow-md transition-all active:scale-95 disabled:opacity-50"
@@ -362,6 +365,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
               <div className="flex justify-between items-center pt-2">
                 <button
+                  type="button"
                   onClick={resetMatch}
                   className="inline-flex items-center gap-1.5 text-xs text-slate-600 hover:text-slate-900 font-bold px-3 py-1.5 rounded-lg bg-white border border-slate-200"
                 >
@@ -428,12 +432,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
               />
               <div className="flex justify-center gap-2">
                 <button
+                  type="button"
                   onClick={simulatePredict}
                   className="bg-blue-600 text-white font-bold text-xs px-4 py-2 rounded-xl"
                 >
                   Predict Character
                 </button>
                 <button
+                  type="button"
                   onClick={clearCanvas}
                   className="bg-slate-200 text-slate-800 font-bold text-xs px-3 py-2 rounded-xl"
                 >
@@ -524,6 +530,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({ project, onClose }) 
 
         <div className="pt-2 flex justify-end">
           <button
+            type="button"
             onClick={onClose}
             className="bg-slate-900 text-white font-bold text-xs px-6 py-2.5 rounded-full hover:bg-slate-800 transition-colors"
           >

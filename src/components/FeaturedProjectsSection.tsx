@@ -28,12 +28,14 @@ export const FeaturedProjectsSection: React.FC<FeaturedProjectsSectionProps> = (
 
         <div className="flex items-center gap-2">
           <button
+            type="button"
             aria-label="Previous Project"
             className="w-9 h-9 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-600 hover:bg-slate-50 transition-colors shadow-xs"
           >
             <ChevronLeft className="w-4 h-4" />
           </button>
           <button
+            type="button"
             aria-label="Next Project"
             className="w-9 h-9 rounded-full border border-slate-200 bg-white flex items-center justify-center text-slate-600 hover:bg-slate-50 transition-colors shadow-xs"
           >

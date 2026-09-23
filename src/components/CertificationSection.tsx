@@ -36,6 +36,7 @@ export const CertificationSection: React.FC = () => {
 
               <div className="pt-2">
                 <button
+                  type="button"
                   onClick={() => setShowModal(true)}
                   className="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 text-blue-700 hover:bg-blue-100 text-xs font-bold px-4 py-2 rounded-full transition-colors"
                 >
@@ -80,6 +81,7 @@ export const CertificationSection: React.FC = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-fadeIn">
           <div className="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-slate-200 space-y-4 relative">
             <button
+              type="button"
               onClick={() => setShowModal(false)}
               className="absolute top-4 right-4 p-2 text-slate-400 hover:text-slate-700 rounded-full hover:bg-slate-100"
             >

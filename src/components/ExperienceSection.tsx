@@ -138,14 +138,18 @@ export const ExperienceSection: React.FC = () => {
               <div className="flex items-end justify-between h-24 gap-1.5 pt-2 px-1">
                 {growthHeights.map((h, i) => (
                   <button
+                    type="button"
                     key={i}
                     onClick={() => setSelectedMonth(i)}
+                    aria-label={`Select month ${months[i]}`}
                     className={`w-full rounded-t transition-all cursor-pointer relative group ${
                       selectedMonth === i ? 'bg-blue-600 shadow-xs' : 'bg-blue-100 hover:bg-blue-300'
                     }`}
                     style={{ height: `${h}%` }}
                     title={`${months[i]}: ${h * 15} sessions`}
-                  />
+                  >
+                    <span className="sr-only">{months[i]}</span>
+                  </button>
                 ))}
               </div>
               <div className="flex justify-between text-[9px] text-slate-400 pt-1 border-t border-slate-100 font-mono">

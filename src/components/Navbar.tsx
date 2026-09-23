@@ -84,6 +84,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenAIChat }) =>
         <div className="flex items-center gap-2">
           {/* AI Assistant Quick Trigger */}
           <button
+            type="button"
             onClick={onOpenAIChat}
             className="hidden sm:inline-flex items-center gap-1.5 bg-blue-50 hover:bg-blue-100 text-blue-700 text-[12px] font-bold px-3 py-2 rounded-full border border-blue-200/80 transition-all"
             title="Chat with Mukil's AI Assistant"
@@ -94,6 +95,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenAIChat }) =>
 
           {/* Resume Modal Trigger */}
           <button
+            type="button"
             onClick={onOpenResume}
             className="hidden sm:inline-flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-[12px] font-bold px-3.5 py-2 rounded-full transition-all"
           >
@@ -112,6 +114,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenAIChat }) =>
 
           {/* Mobile Hamburger Menu Toggle */}
           <button
+            type="button"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="md:hidden p-2 text-slate-700 hover:bg-slate-100 rounded-full transition-colors"
             aria-label="Toggle Navigation Menu"
@@ -138,6 +141,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenAIChat }) =>
           </div>
           <div className="pt-2 border-t border-slate-100 flex items-center justify-between gap-2">
             <button
+              type="button"
               onClick={() => {
                 setIsMobileMenuOpen(false);
                 onOpenAIChat();
@@ -148,6 +152,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenResume, onOpenAIChat }) =>
               <span>Ask Mukil's AI</span>
             </button>
             <button
+              type="button"
               onClick={() => {
                 setIsMobileMenuOpen(false);
                 onOpenResume();

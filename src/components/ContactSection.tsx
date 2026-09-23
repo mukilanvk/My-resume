@@ -71,6 +71,7 @@ export const ContactSection: React.FC = () => {
             </a>
 
             <button
+              type="button"
               onClick={handleCopyEmail}
               className="inline-flex items-center gap-1.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold text-xs sm:text-sm px-4 py-3 rounded-full backdrop-blur transition-all"
             >

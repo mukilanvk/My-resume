@@ -72,6 +72,7 @@ AI & Cloud: Gemini API, Google Cloud Platform, AI Agents, RAG Architecture`;
 
           <div className="flex items-center gap-2">
             <button
+              type="button"
               onClick={handleCopy}
               className="inline-flex items-center gap-1.5 bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold px-3 py-2 rounded-full transition-colors"
             >
@@ -80,6 +81,7 @@ AI & Cloud: Gemini API, Google Cloud Platform, AI Agents, RAG Architecture`;
             </button>
 
             <button
+              type="button"
               onClick={handleDownload}
               className="inline-flex items-center gap-1.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold px-4 py-2 rounded-full shadow-xs transition-colors"
             >
@@ -88,6 +90,7 @@ AI & Cloud: Gemini API, Google Cloud Platform, AI Agents, RAG Architecture`;
             </button>
 
             <button
+              type="button"
               onClick={onClose}
               className="p-2 text-slate-400 hover:text-slate-800 rounded-full hover:bg-slate-100 transition-colors"
             >
@@ -174,6 +177,7 @@ AI & Cloud: Gemini API, Google Cloud Platform, AI Agents, RAG Architecture`;
 
         <div className="pt-2 flex justify-end">
           <button
+            type="button"
             onClick={onClose}
             className="bg-slate-900 text-white font-bold text-xs px-6 py-2.5 rounded-full hover:bg-slate-800 transition-colors"
           >
